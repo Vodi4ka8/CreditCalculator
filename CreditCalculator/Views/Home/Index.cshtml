@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model CreditInformationModel
+
+
+<body class="card-body">
+    <form asp-controller="Home" asp-action="Count" method="post">
+
+        <button type="submit" class="btn btn-primary" asp-controller="Home" asp-action="ViewForPerMonth" style="margin-left:1px">Рассчитать</button>
+
+        <button type="submit" class="btn btn-primary" asp-controller="Home" asp-action="ViewForPerDay" style="margin-left:1px">Рассчитать по дням </button>
+      
+    </form>
+</body>
+    
